@@ -309,3 +309,115 @@ main {
   font-size: 0.65em;
   padding: 1rem 0.5rem 2.5rem 0.5rem;
 }
+
+.other-tech {
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  grid-template-rows: repeat(3, 31.25rem);
+  grid-gap: 1rem;
+}
+
+.single {
+  max-width: 21.875rem;
+}
+
+.first-picture {
+  width: 20rem;
+  height: 12.5rem;
+  background-image: 
+      linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)),
+      url(images/bitcoin.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 6rem;
+  
+}
+
+.mid-section {
+  flex-direction: row-reverse;
+  max-width: 20rem;
+  height: 70px;
+}
+
+.mid-section div img {
+  width: 5rem;
+  height: 100%;
+}
+
+.another {
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 0.5rem ;
+  width: 500px;
+}
+
+.another p {
+  line-height: 0.8rem;
+  width: 14rem;
+  font-size: 1rem;
+}
+
+.list-info {
+  width: 20rem;
+}
+
+.list-info ul li {
+  list-style-type: disc;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-top {
+  background-color: #555;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-top ul li {
+  padding-left: 2rem;
+}
+
+.footer-top ul li a:hover {
+  color: white;
+}
+
+.top-icons li a {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  background-color: gray;
+  padding: 7px;
+  border-radius: 50%;
+  
+}
+
+.top-icons li a:hover {
+  background-color: #555;
+  border: 1px solid gray;
+}
+
+.footer-bottom {
+  text-align: center;
+  height: 6rem;
+  padding-top: 3rem;
+  background-color: #000;
+}
+
+.footer-bottom a img {
+  height: 1rem;
+  width: 2rem;
+  color: white;
+}
+
+.accessible {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: white;
+  background-color: blue;
+  border-radius: 60%;
+}
