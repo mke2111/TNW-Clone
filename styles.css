@@ -78,6 +78,8 @@ li {
   align-items: center;
   font-size: 1.0rem;
   height: 3rem;
+  /* position: fixed;
+  z-index: 999; */
 }
 
 .bottom-left li {
@@ -116,6 +118,8 @@ button:hover {
   background-color: #fd3;
   padding: 0 1.0rem;
   height: 1.5rem;
+  /* position: fixed;
+  z-index: 999; */
 }
 
 .nav-below p {
@@ -133,7 +137,6 @@ main {
   margin-right: 0.8rem;
   position: relative;
   height: 500px;
-  border: 1px solid red;
 }
 
 .big-picture img {
@@ -144,11 +147,11 @@ main {
 
 .small-picture {
   width: 34%;
-  margin-left: 0.8rem;
+  margin-left: 0.3rem;
   height: 500px;
 }
 
-.small-picture img {
+.small-picture div img {
   width: 100%;
   height: 100%;
 }
@@ -185,15 +188,14 @@ main {
 
 .side-pic {
   position: relative;
-  border: 1px solid red;
   margin-bottom: 0.5rem;
 }
 
 .side-pic h3 a {
   position: absolute;
-  top: 100px;
+  bottom: 1.5rem;
 }
 
 #side-top {
-  height: 80%;
+  height: 15.8rem;
 }
