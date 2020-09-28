@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global Usage */
+
+.d-flex {
+  display: flex;
+}
+
+.v-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.heading-text {
+  font-size: 1.5rem;
+  color: #f42;
+  font-family: "ARS Maquette", "Helvetica Neue",Arial,sans-serif;
+}
+
+.heading-text:hover {
+  color: black;
+}
+
+.b-color {
+  color: black;
+}
+
+.w-color {
+  color: white;
+}
+
+.r-color {
+  color: #f42;
+}
+
+.g-color {
+  color: gray;
+}
+
+/* Header */
+
+.navbar-top {
+  justify-content: space-between;
+  background-color: black;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  align-items: center;
+  padding: 0 1.0rem;
+}
+
+.navbar-top ul li a:hover {
+  color: white;
+}
+
+.right li{
+  padding-left: 1.2rem;
+}
+
+.left li{
+  padding-right: 1.2rem;
+}
+
+.navbar-bottom {
+  justify-content: space-between;
+  padding: 0 1.0rem;
+  align-items: center;
+  font-size: 1.0rem;
+  height: 3rem;
+}
+
+.bottom-left li {
+  padding-right: 1.5rem;
+}
+
+.bottom-right {
+  align-items: center;
+}
+
+.bottom-right li {
+  padding-left: 1.5rem;
+}
+
+.bottom-right li img {
+  width: 5rem;
+  height: 1.2rem;
+}
+
+button {
+  height: 2rem;
+  width: 6rem;
+  border-radius: 2px;
+  background-color: #0cc;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #9925cf;
+}
+
+.nav-below {
+  background-color: #fd3;
+  padding: 0 1.0rem;
+  height: 1.5rem;
+}
+
+.nav-below p {
+  padding-top: 0.2rem;
+  font-size: 0.9rem;
+}
+
+main {
+  width: 98%;
+  margin: 0.2rem 0.8rem;
+}
+
+.big-picture {
+  width: 64%;
+  margin-right: 0.8rem;
+  position: relative;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.big-picture img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%);
+}
+
+.small-picture {
+  width: 34%;
+  margin-left: 0.8rem;
+  height: 500px;
+}
+
+.small-picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-big-pic {
+  position: relative;
+}
+
+.details {
+  position: absolute;
+  top: 0;
+}
+
+.title-details {
+  justify-content: space-around;
+  margin: 5% 0 0 1.5rem;
+}
+
+.title-details span {
+  font-size: 1rem;
+}
+
+.title-details h2 {
+  font-size: 3rem;
+}
+
+.author {
+  font-size: 0.5rem;
+}
+
+.author a:hover {
+  color: white;
+}
+
+.side-pic {
+  position: relative;
+  border: 1px solid red;
+  margin-bottom: 0.5rem;
+}
+
+.side-pic h3 a {
+  position: absolute;
+  top: 100px;
+}
+
+#side-top {
+  height: 80%;
+}
