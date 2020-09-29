@@ -95,6 +95,10 @@ li {
   background-color: white;
 }
 
+.bars-icon {
+  display: none;
+}
+
 .bottom-left li {
   padding-right: 1.5rem;
 }
@@ -329,12 +333,11 @@ main {
   margin: 5rem auto;
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
   grid-template-rows: repeat(3, 40rem);
-  grid-gap: 1rem;
-  grid-column-gap: 1.5rem;
+  grid-column-gap: 1.1rem;
 }
 
 .single {
-  max-width: 23.875rem;
+  width: 26rem;
 }
 
 .first-picture {
@@ -459,7 +462,10 @@ main {
   padding: 1.5rem 0;
 }
 
-@media (max-width: 768px) {
+/* Media Query for ipad device */
+@media only screen
+and (min-device-width : 600px)
+and (max-device-width : 768px) {
   .heading-text {
     font-size: 1.2rem;
     color: #f42;
@@ -530,7 +536,7 @@ main {
 
   .funds-art {
     width: 98%;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     grid-template-rows: repeat(1, auto);
     grid-column-gap: 1rem;
     grid-row-gap: 0.1rem;
@@ -549,9 +555,85 @@ main {
     margin-top: 2rem;
   }
 
+  .other-tech {
+    width: 90%;
+    margin: 5rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    grid-template-rows: repeat(3, 40rem);
+    grid-column-gap: 2rem;
+  }
+
+  .single {
+    width: 20rem;
+  }
+
+}
+
+/* Media Query for mobile phone device */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 450px) {
+  .black-navbar,
+  .bottom-left {
+    display: none;
+  }
   
+  .clock {
+    display: none;
+  }
 
+  .navbar-bottom,
+  .bottom-right {
+    position: relative;
+  }
+  .search-icon {
+    display: block;
+    position: absolute;
+    left: 100rem;
+  }
 
+  .bars-icon {
+    display: show;
+  }
 
+  .nav-below {
+    height: 5rem;
+    display: flex;
+  }
+
+  .nav-below p a {
+    justify-content: flex-start;
+    align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .main-news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .big-picture {
+    width: 98%;
+    height: 35rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .side-pic {
+    width: 98%;
+  }
+
+  .logo-big-pic {
+    display: none;
+    overflow: hidden;
+  }
+
+  .title-details {
+    font-size: 0.5rem;
+  }
 
 }
