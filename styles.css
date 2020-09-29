@@ -582,9 +582,12 @@ and (max-device-width : 599px) {
     width: 85%;
   }
 
-  .bottom-right li a { /* need to fix */
+  .bottom-right { /* need to fix */
     position: fixed;
-    z-index: 900;
+    z-index: 990;
+    background-color: white;
+    border: 1px solid gray;
+    padding-right: 30%;
   }
   
   .logo-fixed {
@@ -597,8 +600,7 @@ and (max-device-width : 599px) {
     display: none;
   }
 
-  .navbar-bottom,
-  .bottom-right {
+  .navbar-bottom {
     position: relative;
     left: 50px;
   }
@@ -610,7 +612,7 @@ and (max-device-width : 599px) {
   .search-icon {
     display: block;
     position: absolute;
-    left: 100rem;
+    left: 1rem;
   }
 
   #b-icon {
@@ -620,7 +622,7 @@ and (max-device-width : 599px) {
 
   #s-icon {
     position: relative;
-    left: 60px;
+    left: 80px;
     font-size: 1rem;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
