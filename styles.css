@@ -328,9 +328,9 @@ main {
   width: 90%;
   margin: 5rem auto;
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
-  grid-template-rows: repeat(3, 31.25rem);
+  grid-template-rows: repeat(3, 40rem);
   grid-gap: 1rem;
-  grid-column-gap: 2.5rem;
+  grid-column-gap: 1.5rem;
 }
 
 .single {
@@ -338,22 +338,23 @@ main {
 }
 
 .first-picture {
-  width: 23rem;
-  height: 12.5rem;
+  width: 20rem;
+  height: 20rem;
   background-image: 
       linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)),
       url(images/bitcoin.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding-top: 4rem;
+  padding-top: 9rem;
+  padding-left: 1rem;
   margin: 1rem 0 0.2rem 0;
   
 }
 
 .mid-section {
   flex-direction: row-reverse;
-  max-width: 23rem;
+  max-width: 20rem;
   height: 70px;
   background-color:rgba(255, 239, 237, 0.55);
   margin-bottom: 0.4rem;
@@ -380,7 +381,7 @@ main {
 }
 
 .list-info {
-  width: 23rem;
+  width: 20rem;
   margin-bottom: 2rem;
 }
 
