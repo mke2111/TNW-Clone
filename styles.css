@@ -260,6 +260,10 @@ main {
   margin: 5rem auto;
 }
 
+.fund-containers {
+  max-width: 80%;
+}
+
 .title-section {
   justify-content: space-between;
   align-items: center;
