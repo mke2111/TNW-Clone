@@ -822,7 +822,7 @@ footer {
 
   .mid-section {
     max-width: 100%;
-    width: 25rem;
+    width: 120%;
     height: 5rem;
     flex-direction: row-reverse;
     background-color: rgba(255, 239, 237, 0.55);
@@ -888,7 +888,7 @@ footer {
   }
 
   .funds-art {
-    width: 100%;
+    width: 98%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-row-gap: 1rem;
