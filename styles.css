@@ -87,11 +87,12 @@ li {
 .logo-fixed {
   position: absolute;
   width: 9rem;
+  display: none;
 }
 
 header {
   width: 100%;
-  position: fixed;
+  position: relative;
 }
 
 .navbar-top {
@@ -124,24 +125,18 @@ header {
   padding-right: 1.2rem;
 }
 
-/*
-.nn {
-  position: fixed;
-  width: 100%;
-  top: 0;
-} */
-
 .navbar-bottom {
   justify-content: space-between;
   padding: 0 1rem;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   height: 3rem;
   background-color: white;
 }
 
 .bars-icon {
   display: none;
+  visibility: hidden;
 }
 
 .bottom-left li {
@@ -289,12 +284,12 @@ main {
 }
 
 .funds-section {
-  width: 90%;
+  width: 95%;
   margin: 5rem auto;
 }
 
 .fund-containers {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .title-section {
@@ -304,10 +299,9 @@ main {
 }
 
 .funds-art {
-  grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   grid-template-rows: repeat(1, 18.75rem);
-  grid-column-gap: 1rem;
-  grid-row-gap: 0.1rem;
+  grid-column-gap: 0.5rem;
 }
 
 .title-funds h4 {
@@ -353,17 +347,17 @@ main {
 .other-tech {
   width: 90%;
   margin: 5rem auto;
-  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
   grid-template-rows: repeat(3, 40rem);
-  grid-column-gap: 1.1rem;
+  grid-gap: 0.8rem;
 }
 
 .single {
-  width: 26rem;
+  width: 100%;
 }
 
 .first-picture {
-  width: 20rem;
+  width: 100%;
   height: 20rem;
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)), url(images/bitcoin.jpeg);
   background-repeat: no-repeat;
@@ -464,6 +458,7 @@ main {
 }
 
 /* Media Query for ipad device */
+
 @media only screen and (min-device-width: 600px) and (max-device-width: 768px) {
   .heading-text {
     font-size: 1.2rem;
@@ -476,17 +471,25 @@ main {
   }
 
   .clock,
-  .pipes {
+  .pipes,
+  button {
     display: none;
+  }
+
+  .logo-fixed {
+    width: 6rem;
+    display: inherit;
+    height: 4.5rem;
   }
 
   .navbar-bottom,
   .navbar-top {
     width: 100%;
+    padding-left: 7rem;
   }
 
   .navbar-bottom li a {
-    font-size: 0.85em;
+    font-size: 0.7em;
   }
 
   .menu-none {
@@ -503,7 +506,7 @@ main {
   }
 
   .nav-below {
-    padding: 1rem 0 2rem 3rem;
+    padding: 1rem 0 2rem 7rem;
   }
 
   .latestn-section,
@@ -536,7 +539,7 @@ main {
 
   .funds-art {
     width: 98%;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     grid-template-rows: repeat(1, auto);
     grid-column-gap: 1rem;
     grid-row-gap: 0.1rem;
@@ -569,19 +572,28 @@ main {
 }
 
 /* Media Query for mobile phone device */
-@media only screen and (min-device-width: 320px) and (max-device-width: 599px) {
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 599px) {
   header {
     width: 100%;
   }
 
   .black-navbar,
-  .bottom-left {
+  .bottom-left,
+  .pipes,
+  button {
     display: none;
   }
 
   .navbar-bottom {
     width: 100%;
     position: relative;
+  }
+
+  .logo-fixed {
+    width: 6rem;
+    display: inherit;
+    height: 3rem;
   }
 
   .sigle-topic img {
@@ -593,7 +605,6 @@ main {
     position: fixed;
     z-index: 990;
     background-color: white;
-    border: 1px solid gray;
     padding-right: 5%;
     height: 3rem;
     width: 100%;
@@ -643,15 +654,6 @@ main {
     display: flex;
   }
 
-  .another p {
-    text-align: left;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding-left: 1rem;
-    padding-right: 0.5rem;
-    width: 200px;
-  }
-
   #nav-b p {
     padding: 35px 0 0 0;
     justify-content: flex-start;
@@ -660,12 +662,6 @@ main {
     white-space: nowrap;
     overflow: hidden;
   }
-
-  /* .main-news {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  } */
 
   .main-news {
     width: 100%;
@@ -685,12 +681,7 @@ main {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    border: 1px solid red;
   }
-
-  /* main {
-    margin: 5rem 10%;
-  } */
 
   .a-top {
     grid-area: middle-side;
@@ -717,17 +708,19 @@ main {
     font-size: 2rem;
   }
 
-  footer {
-    border: 1px solid red;
-  }
-
   .footer-bottom {
     width: 100%;
     padding: 1rem 2rem;
   }
 
   .accessible {
-    border: 1px solid red;
+    bottom: 0;
+    right: 0;
+    width: 1.5rem;
+    height: 2rem;
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
   }
 
   .bottom-icons {
@@ -747,24 +740,23 @@ main {
   }
 
   .funds-section {
-    width: 100%;
+    width: 98%;
   }
 
   .other-tech {
     width: 100%;
     margin: 2rem 0;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, minmax(18.5rem, 1fr));
     grid-template-rows: auto;
     grid-row-gap: 1.1rem;
   }
 
   .single {
-    width: 100%;
-    border: 1px solid red;
+    width: 95%;
   }
 
   .first-picture {
-    width: 18rem;
+    width: 100%;
     height: 15rem;
     background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)), url(images/bitcoin.jpeg);
     background-repeat: no-repeat;
@@ -774,9 +766,10 @@ main {
   }
 
   .mid-section {
+    max-width: 100%;
+    width: 25rem;
+    height: 5rem;
     flex-direction: row-reverse;
-    max-width: 18rem;
-    height: 70px;
     background-color: rgba(255, 239, 237, 0.55);
     margin-bottom: 0.4rem;
   }
@@ -785,20 +778,35 @@ main {
     text-align: left;
     font-size: 0.8rem;
     font-weight: bold;
-    width: 310px;
+    max-width: 100%;
+    width: 18rem;
+  }
+
+  .another p {
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 100%;
+  }
+
+  #for-size {
+    width: 100%;
   }
 
   .mid-section div img {
-    width: 80px;
+    max-width: 100%;
+    width: 10rem;
     height: 100%;
   }
 
   .another h3 {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
   }
 
   .list-info {
-    width: 18rem;
+    width: 100%;
     margin-bottom: 2rem;
   }
 
@@ -813,7 +821,6 @@ main {
 
   .latestn-section {
     width: 100%;
-    border: 1px solid red;
   }
 
   .latest-news {
@@ -851,7 +858,6 @@ main {
   .fund-containers {
     max-width: 100%;
     height: 300px;
-    border: 1px solid red;
   }
 
   .title-section {
