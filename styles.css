@@ -698,7 +698,6 @@ footer {
     text-align: left;
     font-size: 0.8rem;
     font-weight: bold;
-    padding-left: 0.5rem;
     padding-right: 0.5rem;
     width: 100%;
   }
@@ -823,7 +822,7 @@ footer {
 
   .mid-section {
     max-width: 100%;
-    width: 25rem;
+    width: 120%;
     height: 5rem;
     flex-direction: row-reverse;
     background-color: rgba(255, 239, 237, 0.55);
@@ -835,7 +834,7 @@ footer {
     font-size: 0.8rem;
     font-weight: bold;
     max-width: 100%;
-    width: 18rem;
+    width: 100%;
   }
 
   #for-size {
@@ -846,10 +845,6 @@ footer {
     max-width: 100%;
     width: 10rem;
     height: 100%;
-  }
-
-  .another h3 {
-    padding-left: 0.5rem;
   }
 
   .list-info {
@@ -895,14 +890,15 @@ footer {
   }
 
   .funds-art {
-    width: 100%;
+    width: 98%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-row-gap: 1rem;
   }
 
   .fund-containers {
-    width: 100%;
+    max-width: 100%;
+    width: 120%;
   }
 
   .title-section {
