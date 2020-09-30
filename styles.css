@@ -493,6 +493,10 @@ footer {
     grid-column-gap: 1rem;
     grid-row-gap: 0.1rem;
   }
+
+  .title-section {
+    display: flex;
+  }
 }
 
 @media only screen and (min-device-width: 767px) and (max-device-width: 1023px) {
@@ -578,7 +582,7 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     grid-template-rows: repeat(1, auto);
     grid-column-gap: 1rem;
-    grid-row-gap: 0.1rem;
+    grid-row-gap: 1rem;
   }
 
   .fund-containers {
@@ -754,7 +758,7 @@ footer {
   }
 
   footer {
-    width: 20.5rem;
+    width: 100%;
     display: grid;
     grid-template-columns: 1.5fr;
   }
@@ -892,9 +896,9 @@ footer {
 
   .funds-art {
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-    grid-template-rows: repeat(1, auto);
-    grid-row-gap: 0.1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 1rem;
   }
 
   .fund-containers {
