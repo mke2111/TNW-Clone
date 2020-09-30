@@ -84,6 +84,16 @@ li {
 
 /* Header */
 
+.logo-fixed {
+  position: absolute;
+  width: 9rem;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+}
+
 .navbar-top {
   justify-content: space-between;
   background-color: black;
