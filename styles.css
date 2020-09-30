@@ -135,8 +135,7 @@ header {
 }
 
 .bars-icon {
-  display: none;
-  visibility: hidden;
+  color: transparent;
 }
 
 .bottom-left li {
@@ -284,12 +283,12 @@ main {
 }
 
 .funds-section {
-  width: 95%;
+  width: 90%;
   margin: 5rem auto;
 }
 
 .fund-containers {
-  max-width: 100%;
+  width: 100%;
 }
 
 .title-section {
@@ -301,7 +300,7 @@ main {
 .funds-art {
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   grid-template-rows: repeat(1, 18.75rem);
-  grid-column-gap: 0.5rem;
+  grid-column-gap: 1rem;
 }
 
 .title-funds h4 {
@@ -370,7 +369,8 @@ main {
 
 .mid-section {
   flex-direction: row-reverse;
-  max-width: 20rem;
+  max-width: 100%;
+  width: 20rem;
   height: 70px;
   background-color: rgba(255, 239, 237, 0.55);
   margin-bottom: 0.4rem;
@@ -391,13 +391,13 @@ main {
 
 .another p {
   line-height: 0.8rem;
-  width: 14rem;
-  font-size: 1rem;
+  width: 10rem;
+  font-size: 0.7rem;
   margin-top: 0.5rem;
 }
 
 .list-info {
-  width: 20rem;
+  width: 100%;
   margin-bottom: 2rem;
 }
 
@@ -633,7 +633,7 @@ main {
   }
 
   #b-icon {
-    display: inherit;
+    color: #f42;
     font-size: 1rem;
     padding-right: 1rem;
   }
