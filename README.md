@@ -31,8 +31,8 @@ To get a local copy up and running follow these simple example steps.
 - Clone or download the repo and run the HTML File.
 
 ### Run tests
-- [We use Stylelint, Lighthout, & Webhint](https://github.com/alejandrotoledoweb/smashing-magazine-gray-scale/actions/runs/274050757)
-- Linters #6
+- [We use Stylelint, Lighthout, & Webhint](https://github.com/mke2111/TNW-Clone/actions/runs/279570575)
+- Linters #2
 
 
 ## Authors
