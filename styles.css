@@ -392,10 +392,8 @@ main {
 
 .another p {
   line-height: 0.8rem;
-  /* width: 10rem; */
   font-size: 0.7rem;
   margin-top: 0.5rem;
-  /* padding-left: 1rem; */
 }
 
 .list-info {
