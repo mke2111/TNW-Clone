@@ -373,7 +373,6 @@ main {
 .mid-section {
   flex-direction: row-reverse;
   max-width: 100%;
-  /* width: 20rem; */
   height: 70px;
   background-color: rgba(255, 239, 237, 0.55);
   margin-bottom: 0.4rem;
