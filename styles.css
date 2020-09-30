@@ -574,12 +574,16 @@ and (max-device-width : 768px) {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 599px) {
+  header {
+    width: 100%;
+  }
+
   .black-navbar,
   .bottom-left {
     display: none;
   }
   .navbar-bottom {
-    width: 85%;
+    width: 100%;
   }
 
   .bottom-right { /* need to fix */
@@ -587,7 +591,7 @@ and (max-device-width : 599px) {
     z-index: 990;
     background-color: white;
     border: 1px solid gray;
-    padding-right: 30%;
+    padding-right: 5%;
   }
   
   .logo-fixed {
@@ -602,11 +606,19 @@ and (max-device-width : 599px) {
 
   .navbar-bottom {
     position: relative;
-    left: 50px;
+    /* left: 50px; */
+    /* right: -15px; */
   }
 
   .bottom-right {
     height: 3rem;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .bottom-right li {
+    float: right;
+    right: 0;
   }
 
   .search-icon {
@@ -618,11 +630,12 @@ and (max-device-width : 599px) {
   #b-icon {
     display: inherit;
     font-size: 1rem;
+    padding-right: 1rem;
   }
 
   #s-icon {
     position: relative;
-    left: 80px;
+    left: 5rem;
     font-size: 1rem;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
@@ -664,17 +677,17 @@ and (max-device-width : 599px) {
   
   .big-picture {
     grid-area: top-side;
-    width: 98%;
-    height: 35rem;
+    width: 100%;
+    height: 20rem;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     border: 1px solid red;
   }
 
-  main {
-    margin: 0;
-  }
+  /* main {
+    margin: 5rem 10%;
+  } */
 
   .a-top {
     grid-area: middle-side;
@@ -685,7 +698,7 @@ and (max-device-width : 599px) {
   }
 
   .side-pic {
-    width: 98%;
+    width: 100%;
   }
 
   .logo-big-pic {
@@ -695,6 +708,10 @@ and (max-device-width : 599px) {
 
   .title-details {
     font-size: 0.5rem;
+  }
+
+  .title-details h2 {
+    font-size: 2rem;
   }
 
   footer {
@@ -727,16 +744,22 @@ and (max-device-width : 599px) {
     
   }
 
+  .funds-section {
+    width: 100%;
+    /* margin: 5rem 20%; */
+  }
+
   .other-tech {
-    width: 98%;
-    margin: 2rem 5%;
+    width: 100%;
+    margin: 2rem 0;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-row-gap: 1.1rem;
   }
 
   .single {
-    width: 90%;    
+    width: 100%;
+    border: 1px solid red;  
   }
 
   .first-picture {
@@ -800,12 +823,20 @@ and (max-device-width : 599px) {
   }
 
   .latestn-section {
-    width: 98%;
-    margin: 5rem 5%;
+    width: 100%;
+    /* margin: 5rem 5%; */
+    border: 1px solid red;
+  }
+
+  .latest-news {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
   }
 
   .sigle-topic {
     display: flex;
+    margin-top: 2rem;
   }
 
   .sigle-topic img {
@@ -818,7 +849,7 @@ and (max-device-width : 599px) {
   }
 
   .text-all {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     font-size: 1.1rem;
     line-height: 1;
   }
@@ -828,7 +859,7 @@ and (max-device-width : 599px) {
   }
 
   .funds-art {
-    width: 98%;
+    width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     grid-template-rows: repeat(1, auto);
     grid-column-gap: 1rem;
@@ -838,6 +869,7 @@ and (max-device-width : 599px) {
   .fund-containers {
     max-width: 100%;
     height: 300px;
+    border: 1px solid red;
   }
 
   .title-section {
