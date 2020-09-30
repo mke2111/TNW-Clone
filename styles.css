@@ -92,7 +92,9 @@ li {
 
 header {
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 0.1px;
+
 }
 
 .navbar-top {
@@ -195,7 +197,7 @@ main {
   grid-template-areas:
     'main-side top-side'
     'main-side bottom-side';
-  grid-template-columns: 63.5% 34.5%;
+  grid-template-columns: 63.5% 35.5%;
   grid-template-rows: 14.5rem 14.5rem;
   gap: 0.5rem;
 }
@@ -494,7 +496,7 @@ footer {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+@media only screen and (min-device-width: 767px) and (max-device-width: 1023px) {
   .heading-text {
     font-size: 1.2rem;
     color: #f42;
@@ -598,7 +600,7 @@ footer {
     margin: 5rem auto;
     grid-template-columns: repeat(auto-fit, minmax(14.75rem, 14rem));
     grid-template-rows: repeat(3, 40rem);
-    grid-column-gap: 3rem;
+    grid-column-gap: 8rem;
   }
 
   .single {
