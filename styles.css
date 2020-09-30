@@ -373,7 +373,7 @@ main {
 .mid-section {
   flex-direction: row-reverse;
   max-width: 100%;
-  width: 20rem;
+  /* width: 20rem; */
   height: 70px;
   background-color: rgba(255, 239, 237, 0.55);
   margin-bottom: 0.4rem;
@@ -389,7 +389,7 @@ main {
   font-size: 0.8rem;
   font-weight: bold;
   padding-left: 1rem;
-  width: 500px;
+  width: 100%;
 }
 
 .another p {
@@ -698,7 +698,6 @@ footer {
     text-align: left;
     font-size: 0.8rem;
     font-weight: bold;
-    padding-left: 0.5rem;
     padding-right: 0.5rem;
     width: 100%;
   }
@@ -834,8 +833,6 @@ footer {
     text-align: left;
     font-size: 0.8rem;
     font-weight: bold;
-    max-width: 100%;
-    width: 18rem;
   }
 
   #for-size {
@@ -846,10 +843,6 @@ footer {
     max-width: 100%;
     width: 10rem;
     height: 100%;
-  }
-
-  .another h3 {
-    padding-left: 0.5rem;
   }
 
   .list-info {
@@ -899,10 +892,12 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-row-gap: 1rem;
+    margin: 0 auto;
   }
 
   .fund-containers {
     width: 100%;
+    margin: 0 auto;
   }
 
   .title-section {
