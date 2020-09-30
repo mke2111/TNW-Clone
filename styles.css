@@ -26,7 +26,32 @@ li {
 .heading-text {
   font-size: 1.5rem;
   color: #f42;
-  font-family: "ARS Maquette", "Helvetica Neue",Arial,sans-serif;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+}
+
+.second-part a {
+  text-align: left;
+  display: block;
+}
+
+.side-pic h3 a {
+  bottom: 1.5rem;
+}
+
+.top-icons li a {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  background-color: gray;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.list-info ul li a {
+  color: #aaa;
+}
+
+.author a:hover {
+  color: white;
 }
 
 .heading-text:hover {
@@ -65,21 +90,31 @@ li {
   height: 1.5rem;
   font-size: 0.8rem;
   align-items: center;
-  padding: 0 1.0rem;
+  padding: 0 1rem;
+}
+
+.funds-menu a:hover {
+  color: black;
+}
+
+.top-icons li a:hover {
+  background-color: #555;
+  border: 1px solid gray;
 }
 
 .navbar-top ul li a:hover {
   color: white;
 }
 
-.right li{
+.right li {
   padding-left: 1.2rem;
 }
 
-.left li{
+.left li {
   padding-right: 1.2rem;
 }
-/* 
+
+/*
 .nn {
   position: fixed;
   width: 100%;
@@ -88,9 +123,9 @@ li {
 
 .navbar-bottom {
   justify-content: space-between;
-  padding: 0 1.0rem;
+  padding: 0 1rem;
   align-items: center;
-  font-size: 1.0rem;
+  font-size: 1rem;
   height: 3rem;
   background-color: white;
 }
@@ -105,6 +140,11 @@ li {
 
 .bottom-right {
   align-items: center;
+}
+
+.latest-news img {
+  width: 100%;
+  height: 7rem;
 }
 
 .bottom-right li {
@@ -133,7 +173,7 @@ button:hover {
 
 .nav-below {
   background-color: #fd3;
-  padding: 0 1.0rem;
+  padding: 0 1rem;
   height: 1.5rem;
 }
 
@@ -148,7 +188,7 @@ main {
 }
 
 .main-news {
-  grid-template-areas: 
+  grid-template-areas:
     'main-side top-side'
     'main-side bottom-side';
   grid-template-columns: 64.5% 34.5%;
@@ -158,9 +198,7 @@ main {
 
 .big-picture {
   grid-area: main-side;
-  background-image: 
-      linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)),
-      url(images/1-32-796x417.jpg);
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)), url(images/1-32-796x417.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -186,10 +224,6 @@ main {
   font-size: 0.5rem;
 }
 
-.author a:hover {
-  color: white;
-}
-
 .side-pic {
   background-repeat: no-repeat;
   background-position: center center;
@@ -201,21 +235,13 @@ main {
 }
 
 .a-top {
-  background-image: 
-      linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)),
-      url(images/TNW2020-feature.jpg);
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)), url(images/TNW2020-feature.jpg);
   grid-area: top-side;
 }
 
 .b-bottom {
-  background-image: 
-      linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)),
-      url(images/Untitled-design-13-796x417.jpg);
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)), url(images/Untitled-design-13-796x417.jpg);
   grid-area: bottom-side;
-}
-
-.side-pic h3 a {
-  bottom: 1.5rem;
 }
 
 #side-top {
@@ -237,18 +263,13 @@ main {
   margin-top: 0.1rem;
 }
 
-.latest-news img {
-  width: 100%;
-  height: 7rem;
-}
-
 .d-title {
   font-size: 0.75em;
   font-weight: bold;
 }
 
 .bottom-info {
-  font-size: 0.70em;
+  font-size: 0.7em;
   width: 100%;
 }
 
@@ -272,10 +293,6 @@ main {
   margin: 2rem 0 2rem 0;
 }
 
-.funds-menu a:hover{
-  color: black;
-}
-
 .funds-art {
   grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr));
   grid-template-rows: repeat(1, 18.75rem);
@@ -294,28 +311,22 @@ main {
   width: 3rem;
   height: 3rem;
   float: left;
-  /* margin: 1rem 0.5rem 0 1rem; */
 }
 
 .title-funds span {
   display: block;
-  background-color: rgba(255,68,34,.08);
+  background-color: rgba(255, 68, 34, 0.08);
   font-size: 0.75em;
   padding: 0.5rem 0 0.5rem 4.4rem;
 }
 
-.second-part a {
-  text-align: left;
-  display: block;
-}
-
 .border {
   width: 100%;
-  border: 0.5px solid rgba(255,68,34,.25);
+  border: 0.5px solid rgba(255, 68, 34, 0.25);
 }
 
 .second-part {
-  background-color:rgba(255, 239, 237, 0.55);
+  background-color: rgba(255, 239, 237, 0.55);
 }
 
 .a-tags {
@@ -344,23 +355,20 @@ main {
 .first-picture {
   width: 20rem;
   height: 20rem;
-  background-image: 
-      linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)),
-      url(images/bitcoin.jpeg);
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)), url(images/bitcoin.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding-top: 9rem;
   padding-left: 1rem;
   margin: 1rem 0 0.2rem 0;
-  
 }
 
 .mid-section {
   flex-direction: row-reverse;
   max-width: 20rem;
   height: 70px;
-  background-color:rgba(255, 239, 237, 0.55);
+  background-color: rgba(255, 239, 237, 0.55);
   margin-bottom: 0.4rem;
 }
 
@@ -373,7 +381,7 @@ main {
   text-align: left;
   font-size: 0.8rem;
   font-weight: bold;
-  padding-left: 0.5rem ;
+  padding-left: 0.5rem;
   width: 500px;
 }
 
@@ -398,10 +406,6 @@ main {
   color: #f42;
 }
 
-.list-info ul li a {
-  color: #aaa;
-}
-
 .list-info ul li a:hover {
   color: black;
 }
@@ -420,20 +424,6 @@ main {
 
 .footer-top ul li a:hover {
   color: white;
-}
-
-.top-icons li a {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  background-color: gray;
-  padding: 7px;
-  border-radius: 50%;
-  
-}
-
-.top-icons li a:hover {
-  background-color: #555;
-  border: 1px solid gray;
 }
 
 .footer-bottom {
@@ -464,13 +454,11 @@ main {
 }
 
 /* Media Query for ipad device */
-@media only screen
-and (min-device-width : 600px)
-and (max-device-width : 768px) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 768px) {
   .heading-text {
     font-size: 1.2rem;
     color: #f42;
-    font-family: "ARS Maquette", "Helvetica Neue",Arial,sans-serif;
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   }
 
   .heading-text:hover {
@@ -481,7 +469,8 @@ and (max-device-width : 768px) {
   .pipes {
     display: none;
   }
-  .navbar-bottom, 
+
+  .navbar-bottom,
   .navbar-top {
     width: 100%;
   }
@@ -489,6 +478,7 @@ and (max-device-width : 768px) {
   .navbar-bottom li a {
     font-size: 0.85em;
   }
+
   .menu-none {
     display: none;
   }
@@ -496,7 +486,7 @@ and (max-device-width : 768px) {
   .title-details span {
     font-size: 0.8rem;
   }
-  
+
   .fa-search {
     position: relative;
     left: 5em;
@@ -509,7 +499,6 @@ and (max-device-width : 768px) {
   .latestn-section,
   .funds-section {
     width: 98%;
-    /* margin: 5rem 0.7rem; */
   }
 
   .latest-news {
@@ -567,13 +556,10 @@ and (max-device-width : 768px) {
   .single {
     width: 20rem;
   }
-
 }
 
 /* Media Query for mobile phone device */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 599px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 599px) {
   header {
     width: 100%;
   }
@@ -582,18 +568,28 @@ and (max-device-width : 599px) {
   .bottom-left {
     display: none;
   }
+
   .navbar-bottom {
     width: 100%;
+    position: relative;
   }
 
-  .bottom-right { /* need to fix */
+  .sigle-topic img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .bottom-right {
     position: fixed;
     z-index: 990;
     background-color: white;
     border: 1px solid gray;
     padding-right: 5%;
+    height: 3rem;
+    width: 100%;
+    justify-content: flex-end;
   }
-  
+
   .logo-fixed {
     width: 150px;
     position: fixed;
@@ -602,18 +598,6 @@ and (max-device-width : 599px) {
 
   .clock {
     display: none;
-  }
-
-  .navbar-bottom {
-    position: relative;
-    /* left: 50px; */
-    /* right: -15px; */
-  }
-
-  .bottom-right {
-    height: 3rem;
-    width: 100%;
-    justify-content: flex-end;
   }
 
   .bottom-right li {
@@ -649,6 +633,15 @@ and (max-device-width : 599px) {
     display: flex;
   }
 
+  .another p {
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    width: 200px;
+  }
+
   #nav-b p {
     padding: 35px 0 0 0;
     justify-content: flex-start;
@@ -666,7 +659,7 @@ and (max-device-width : 599px) {
 
   .main-news {
     width: 100%;
-    grid-template-areas: 
+    grid-template-areas:
       'top-side'
       'middle-side'
       'bottom-side';
@@ -674,7 +667,7 @@ and (max-device-width : 599px) {
     grid-template-rows: auto;
     gap: 0.5rem;
   }
-  
+
   .big-picture {
     grid-area: top-side;
     width: 100%;
@@ -741,12 +734,10 @@ and (max-device-width : 599px) {
     background-color: gray;
     padding: 5px;
     border-radius: 50%;
-    
   }
 
   .funds-section {
     width: 100%;
-    /* margin: 5rem 20%; */
   }
 
   .other-tech {
@@ -759,15 +750,13 @@ and (max-device-width : 599px) {
 
   .single {
     width: 100%;
-    border: 1px solid red;  
+    border: 1px solid red;
   }
 
   .first-picture {
     width: 18rem;
     height: 15rem;
-    background-image: 
-        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)),
-        url(images/bitcoin.jpeg);
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(31, 22, 29, 0.73)), url(images/bitcoin.jpeg);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -778,9 +767,8 @@ and (max-device-width : 599px) {
     flex-direction: row-reverse;
     max-width: 18rem;
     height: 70px;
-    background-color:rgba(255, 239, 237, 0.55);
+    background-color: rgba(255, 239, 237, 0.55);
     margin-bottom: 0.4rem;
-
   }
 
   .another {
@@ -793,15 +781,6 @@ and (max-device-width : 599px) {
   .mid-section div img {
     width: 80px;
     height: 100%;
-  }
-
-  .another p {
-    text-align: left;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding-left: 1rem;
-    padding-right: 0.5rem;
-    width: 200px;
   }
 
   .another h3 {
@@ -824,24 +803,17 @@ and (max-device-width : 599px) {
 
   .latestn-section {
     width: 100%;
-    /* margin: 5rem 5%; */
     border: 1px solid red;
   }
 
   .latest-news {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    
   }
 
   .sigle-topic {
     display: flex;
     margin-top: 2rem;
-  }
-
-  .sigle-topic img {
-    width: 6rem;
-    height: 6rem;
   }
 
   .d-title {
@@ -890,9 +862,4 @@ and (max-device-width : 599px) {
   #h-text {
     text-align: left;
   }
-
-  .another {
-    
-  }
-
 }
