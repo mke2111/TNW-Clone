@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Run tests
 - [We use Stylelint, Lighthout, & Webhint](https://github.com/mke2111/TNW-Clone/actions/runs/279570575)
-- Linters #2
+- Linters #13
 
 
 ## Authors
