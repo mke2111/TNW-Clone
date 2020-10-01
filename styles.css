@@ -284,27 +284,33 @@ main {
 }
 
 .funds-section {
-  max-width: 75%;
+  max-width: 85%;
   margin: 5rem auto;
+  padding-right: 0.8rem;
+}
+
+.funds-menu li {
+  display: inline;
 }
 
 .fund-containers {
-  max-width: 85%;
+  max-width: 90%;
   width: 15rem;
 }
 
 .title-section {
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0 2rem 0;
-  width: 98%;
+  margin: 0 auto;
+  max-width: 85%;
 }
 
 .funds-art {
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 18.75rem);
-  max-width: 75%;
-  margin: 0 auto;
+  grid-template-rows: (1, 17.75rem);
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+  padding-left: 2.8rem;
 }
 
 .title-funds h4 {
@@ -551,7 +557,7 @@ footer {
 
   .latestn-section,
   .funds-section {
-    max-width: 98%;
+    max-width: 95%;
   }
 
   .latest-news {
