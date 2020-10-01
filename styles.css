@@ -284,9 +284,8 @@ main {
 }
 
 .funds-section {
-  max-width: 85%;
+  max-width: 90%;
   margin: 5rem auto;
-  padding-right: 0.8rem;
 }
 
 .funds-menu li {
@@ -294,23 +293,23 @@ main {
 }
 
 .fund-containers {
-  max-width: 90%;
-  width: 15rem;
+  max-width: 100%;
+  width: 110%;
 }
 
 .title-section {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 85%;
+  max-width: 100%;
 }
 
 .funds-art {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 17.75rem);
-  max-width: 80%;
+  max-width: 90%;
+  gap: 1rem;
   margin: 0 auto 0 auto;
-  padding-left: 2.8rem;
 }
 
 .title-funds h4 {
@@ -481,15 +480,22 @@ footer {
   }
 
   .other-tech {
-    width: 90%;
+    width: 98%;
     margin: 5rem auto;
     grid-template-columns: repeat(3, 0.96fr);
     grid-template-rows: repeat(3, 40rem);
-    grid-gap: 0.8rem;
+    grid-gap: 1rem;
   }
 
-  .single {
-    width: 80%;
+  .single,
+  .fund-containers,
+  .latest-news {
+    width: 100%;
+  }
+
+  .funds-art,
+  .latestn-section {
+    width: 98%;
   }
 
   .funds-art {
@@ -557,15 +563,22 @@ footer {
 
   .latestn-section,
   .funds-section {
-    max-width: 95%;
+    max-width: 100%;
+    width: 95%;
   }
 
   .latest-news {
-    grid-template-columns: repeat(auto-fill, minmax(13rem, 13rem));
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
     grid-template-rows: repeat(2, 14rem);
     grid-column-gap: 1rem;
-    grid-row-gap: 0.1rem;
-    margin-top: 2rem;
+    grid-row-gap: 0.5rem;
+    margin-top: 1.5rem;
+    max-width: 100%;
+  }
+
+  .sigle-topic {
+    max-width: 100%;
+    width: 150%;
   }
 
   .title-section {
@@ -592,7 +605,7 @@ footer {
   }
 
   .fund-containers {
-    width: 100%;
+    width: 98%;
     height: 300px;
   }
 
@@ -605,7 +618,7 @@ footer {
   }
 
   .other-tech {
-    width: 96%;
+    width: 98%;
     margin: 5rem auto;
     grid-template-columns: repeat(auto-fit, minmax(14.75rem, 14rem));
     grid-template-rows: repeat(3, 40rem);
@@ -613,7 +626,7 @@ footer {
   }
 
   .single {
-    width: 20rem;
+    width: 150%;
   }
 }
 
