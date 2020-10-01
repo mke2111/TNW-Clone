@@ -307,7 +307,7 @@ main {
 
 .funds-art {
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: (1, 17.75rem);
+  grid-template-rows: repeat(1, 17.75rem);
   max-width: 80%;
   margin: 0 auto 0 auto;
   padding-left: 2.8rem;
